@@ -20,7 +20,7 @@ public class AuthService {
 
     if (checkUser.isPresent()) throw new ConflictException("User with email already exist");
 
-
+    System.out.println("The dto: " + registerDto);
     return "response";
   }
 
